@@ -1,0 +1,149 @@
+*{
+    /*border: 1px solid red;*/
+}
+body{
+    margin: 0px;
+    font-family: 'Allerta', sans-serif;
+}
+#header{
+
+}
+#portada{
+
+}
+#skills{
+
+}
+.portada{
+    background-image: url("../imagenes/portada.png");
+    color: white;
+    padding: 20px;
+}
+.titulo{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 70px;
+}
+.titulo-a{
+    font-size: 24px;
+    margin-top: 0px;
+}
+.titulo-b{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.button{
+    border-radius: 5px;
+    border: none;
+    background: #fd324e;
+}
+.portada button{
+    margin:70px;
+}
+.logo{
+    display: inline-block;
+}
+.menu{
+    display: inline-block;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    color: white;
+}
+.menu li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.contenedor{
+    width: 800px;
+    margin: auto;
+}
+.header{
+    position: absolute;
+}
+.skills{
+    color: #1f313c;
+}
+.skills h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+.skill{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #1f313c;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.rigth{
+    float: right;
+    position: relative;
+    top: -127px;
+}
+.left{
+    float: left;
+    position: relative;
+    top: -2px;
+}
+.contenedor-skills-a{
+    margin-left: 20px;
+}
+.contenedor-skills-b{
+    margin-left: 370px;
+}
+.skill ol{
+    padding: 0;
+}
+.footer{
+    background: #273b47;
+}
+.footer .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto{
+    display:flex;
+    width: 300px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.contacto img{
+    display: block;
+}
+.contacto a{
+    color: white;
+    margin: 10px 10px 10px 0;
+    text-decoration: none;
+}
+.contacto strong{
+    display: block;
+}
+.formulario{
+    display: flex;
+    width: 400px;
+    color: white;
+    padding: 50px 10px;
+}
+.intereses label{
+    font-size: 12px;
+}
+.perfil{
+    margin-top: 10px;
+}
+.formulario, .perfil, .intereses{
+    margin-bottom: 10px;
+}
+.col1{
+    margin-right: 10px;
+}
+.col2{
+    align-items: flex-start;
+}
+.col1, .col2{
+    display: flex;
+    flex-direction: column;
+}
+.col2 .button{
+    margin-top: 7px;
+}

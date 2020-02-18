@@ -1,0 +1,13 @@
+.elementosInternos{
+    background-color: #e5eecc;
+    border: 1px solid #d4d4d4;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+}
+.elementos{
+    margin: 50px;
+}
+.selector{
+    border: 3px solid blue;
+}

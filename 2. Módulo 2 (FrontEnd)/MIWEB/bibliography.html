@@ -1,0 +1,107 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Mi página web</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+    </head>
+        <body>
+            <div class="portada2">
+                <header id="header" class="header contenedor">
+                    <figure class="logo">
+                        <img src="imagenes/logo.png" alt="Logo Lester Garcia">
+                    </figure>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="index.html#skills">Aportes</a></li>
+                            <li><a href="#footer">Contacto</a></li>
+                            <li><a href="bibliography.html">¿Quién soy yo?</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="portada">
+                    <div class="contenedor">
+                        <h1 class="Titulo">Lester Andrés García Aquino</h1>
+                        <h2 class="titulo-a">Estudiante</h2>
+                    </div>
+                </section>
+            </div>
+            <section class="table">
+                <div class="contenedor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Descripción</th>
+                                <th>Acerca de mi página</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="td">Soy Lester Andrés García Aquino, tengo 21 años de edad y actualmente estoy cursando la carrera
+                                    de Ingeniería en Informática y Sistemas y soy un joven apasionado por la resolución de problemas de
+                                    diferente índole y dificultad, con eso mi mis constantes ganas de seguir aprendiendo por díficilque se vea 
+                                    a veces, quiero compartir mis conocimientos que tengo en el área de programación y poder seguir aprendiendo
+                                    utilizando la téncina de aprendizaje de doble vía.
+                                </td>
+                                <td class="td">Existen muchas páginas educativas y de sofware y colaboración libre, pero me surgió
+                                    la idea de crear una iniciativa de programación de todos los niveles en cualquier lenguaje de programación
+                                    tanto para fines didácticos como para colaboración grupal y aprendizaje constante.
+
+                                    Cada semana habrá un nuevo aporte en mi GitHub personal para uso didáctico o de aprendizaje propio el cual podran descargar
+                                    y también si quieren colaborar podran enviar por correo sus Links de repositorios con los cuales quieran ayudar a la causa
+                                    de programar de una forma diferente, ya que todo es válido, desde los más simples programas hasta las más complejas aplicaciones,
+                                    la idea es programar y compartir.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <footer id="footer" class="footer">
+                <div class="contenedor">
+                    <div class="contacto">
+                        <img src="imagenes/logo.png"alt="logo" width="200">
+                        <a href="tel.+50212345678"><strong>Telefono</strong><span> +50250212345678</span></a>
+                        <a href="mailto:lesterg.34@gmail.com"><strong>Email</strong><span> lesterg.34@gmail.com</span>
+                        </a>
+                    </div>
+                        <form class="formulario">
+                            <div class="col1">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required/>
+                                <label for="email">Email</label>
+                                <input  type="email" name="email" id="email" required/>
+                            <div class="perfil">
+                                <label for="junior">
+                                    <input type="radio" name="perfil" id="junior" value="junior" checked/>Junior
+                                </label>
+                                <label for="senior">
+                                    <input type="radio" name="perfil" id="senior" value="senior"/>Senior
+                                </label>
+                            </div>
+                            <div class="intereses">
+                                <label for="c#">
+                                    <input type="checkbox" name="intereses"  id="c#" value="c#"/>C#
+                                </label>
+                                <label for="vb">
+                                    <input type="checkbox" name="intereses"  id="vb" value="vb"/>Visual Basic
+                                </label>
+                                <label for="java">
+                                    <input type="checkbox" name="intereses"  id="java" value="java"/>Java
+                                </label>
+                                <label for="sql">
+                                    <input type="checkbox" name="intereses"  id="sql" value="sql"/>SQL
+                                </label>
+                            </div>
+                        </div>
+                            <div class="col2">
+                                <label>Comentarios</label>
+                                    <textarea name="comentrio" id="comentario" cols="30" rows="10"></textarea>
+                                    <input type="submit" value="Enviar" class="button">
+                            </div>
+                        </form>
+                    </div>
+            </footer>
+        </body>
+</html>

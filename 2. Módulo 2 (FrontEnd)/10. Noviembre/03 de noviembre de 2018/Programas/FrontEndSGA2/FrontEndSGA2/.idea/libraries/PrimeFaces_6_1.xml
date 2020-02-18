@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="PrimeFaces-6.1" type="jsf-primefaces">
+    <properties version="6.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/primefaces-6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-api-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/log4j-core-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/all-themes-1.0.10.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

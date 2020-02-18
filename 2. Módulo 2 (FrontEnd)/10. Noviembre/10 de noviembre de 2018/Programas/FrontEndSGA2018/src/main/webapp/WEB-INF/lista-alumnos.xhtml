@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>SGA V1.1</title>
+    </h:head>
+    <h:form>
+    <h:body>
+        <h:form prependId="false" id="form">
+            <p:growl id="message" showDetail="true"></p:growl>
+            <p:dataTable rowKey="#{alumno.codigoAlumno}" var="alumno" id="alumnos" value="#{alumnoBean.alumnos}" editable="true" selection="#{alumnoBean.alumnoSeleccionado}" selectionMode="single">
+                <f:facet name="header">
+                    Lista de alumnos
+                </f:facet>
+                <p:column headerText="carne">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{alumno.carne}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <h:inputText readonly="#{facesContext.renderResponse}" value="#{alumno.carne}"/>
+                        </f:facet>
+                    </p:cellEditor>
+                     <p:column headerText="nombres">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{alumno.nombres}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <h:inputText value="#{alumno.nombres}"/>
+                        </f:facet>
+                    </p:cellEditor>
+                </p:column>
+                </p:column>
+                <p:column headerText="apellidos">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{alumno.apellidos}"/>
+                        </f:facet>
+                        <f:facet name="input">
+                            <h:inputText value="#{alumno.apellidos}"/>
+                        </f:facet>
+                    </p:cellEditor>
+                </p:column>
+                <p:column headerText="fechaNacimiento">
+                    <p:cellEditor>
+                        <f:facet name="output">
+                            <h:outputText value="#{alumno.fechaNacimiento}">
+                                <f:convertDateTime type="date" timeZone="CST" pattern="dd/MM/yyyy"/>
+                            </h:outputText>
+                        </f:facet>
+                        <f:facet name="input">
+                            <p:calendar id="popup" value="#{alumno.fechaNacimiento}"/>
+                        </f:facet>
+                    </p:cellEditor>
+                </p:column>
+                    <f:facet name="footer">
+                        <p:commandButton value="Regresar" action="index"/>
+                    </f:facet>
+                    <p:column headerText="Opciones" style="width: 50px">
+                        <p:rowEditor/>
+                </p:column>
+                    <p:ajax event="rowEdit" listener="#{alumnoBean.editListener}"/>
+            </p:dataTable>
+        </h:form>
+    </h:body>
+    </h:form>
+</html>
+

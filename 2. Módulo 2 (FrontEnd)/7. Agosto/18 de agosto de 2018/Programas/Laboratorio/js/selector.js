@@ -1,0 +1,24 @@
+$(function(){
+    $("#asterisco").click(function(){
+        $("*").addClass("selector");
+    });
+    $("#numeralCorreo").click(function(){
+        $("#correo").addClass("selector");
+    })
+    $("#campo").click(function(){
+        $(".campo").addClass("selector");
+    })
+    $("#div").click(function(){
+        $("div").addClass("selector");
+    })
+    $("#paragraph").click(function(){
+        $("p").addClass("selector");
+    });
+    $("#inputs").click(function(){
+        $("input").addClass("selector");
+    });
+    $("#search").click(function(){
+        var elemento = $("#txtElemento").val();
+        $(elemento).addClass("selector");
+    });
+});

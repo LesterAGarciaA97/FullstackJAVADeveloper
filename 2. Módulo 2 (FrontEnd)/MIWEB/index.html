@@ -1,0 +1,124 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Mi página web</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <div class="portada">
+            <header id="header" class="header contenedor">
+                <figure class="logo">
+                    <img src="imagenes/logo.png" alt="Logo Lester Garcia">
+                </figure>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#skills">Aportes</a></li>
+                        <li><a href="#footer">Contacto</a></li>
+                        <li><a href="bibliography.html">¿Quién soy yo?</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="portada">
+                <div class="contenedor">
+                    <h1 class="Titulo">El mundo de la programación</h1>
+                    <h2 class="titulo-a">"Si lo puedes imaginar, lo puedes programar"</h2>
+                </div>
+            </section>
+        </div>
+        <section id="skills" class="skills contenedor">
+            <h2>Línea de tiempo</h2>
+            <article class="skill">
+                <img class="rigth" width="350" src="imagenes/develop.png" alt="develop">
+                <div class="contenedor-skills-a">
+                    <h3 class="titulo-b">Desarrollo con HTML5 Y CSS3</h3>
+                    <body>
+                        <p class="p">
+                            Para la primera semana de colaboración colectiva, quiero compartir mi primer proyectos
+                            y código fuente de la página web en la que están en este momento, una pequeña 
+                            combinación del lenguaje de etiquetado HTML5 y conjunto a CSS3 para añadir estilo y
+                            poder personalizar dicha página.
+
+                            Pueden encontrar dicho proyecto en mi GitHub y descargarlo o clonar mi repositorio
+                            para poder verlo y aportar ideas.
+                        </p>
+                    </body>
+                </div>
+            </article>
+            <article class="skill">
+                <img class="left" width="350" src="imagenes/github.png" alt="github">
+                <div class="contenedor-skills-b">
+                    <h3 class="titulo-b">Github personal</h3>
+                    <body>
+                        <p class="p">
+                             GitHub es una forja (plataforma de desarrollo colaborativo) para alojar proyectos
+                             utilizando el sistema de control de versiones
+                             Git. Se utiliza principalmente para la creación de código fuente de
+                             programas de computadora. Acontinuación les comparto mi nombre de  usuario de GitHub
+                             para empezar a codificar todos juntos: LesterAGarciaA97.
+                             Pueden encontrarme más fácil aquí: https://github.com/LesterAGarciaA97.
+                        </p>
+                    </body>
+                </div>
+            </article>
+        </section>
+        <footer id="footer" class="footer">
+            <div class="contenedor">
+                <div class="contacto">
+                    <img src="imagenes/logo.png" alt="logo" width="200">
+                    <a href="tel.+50212345678">
+                        <strong>Telefono</strong>
+                        <span> +50212345678</span>
+                    </a>
+                    <a href="mailto:lesterg.34@gmail.com">
+                        <strong>Email</strong>
+                        <span> lesterg.34@gmail.com</span>
+                    </a>
+                </div>
+                <form class="formulario">
+                    <div class="col1">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required/>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required/>
+                        <div class="perfil">
+                            <label for="junior">
+                                <input type="radio" name="perfil" id="junior" value="junior" checked/>Junior
+                            </label>
+                            <label for="senior">
+                                <input type="radio" name="perfil" id="senior" value="senior" />Senior
+                            </label>
+                        </div>
+                        <div class="intereses">
+                            <label for="c#">
+                                <input type="checkbox" name="intereses" id="c#" value="c#" />C#
+                            </label>
+                            <label for="vb">
+                                <input type="checkbox" name="intereses" id="vb" value="vb" />Visual Basic
+                            </label>
+                            <label for="java">
+                                <input type="checkbox" name="intereses" id="java" value="java" />Java
+                            </label>
+                            <label for="python">
+                                <input type="checkbox" name="intereses" id="python" value="python" />Python
+                            </label>
+                            <label for="php">
+                                <input type="checkbox" name="intereses" id="php" value="php" />PHP
+                            </label>
+                            <label for="sql">
+                                <input type="checkbox" name="intereses" id="sql" value="sql" />SQL
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <label>Comentarios</label>
+                        <textarea name="comentrio" id="comentario" cols="30" rows="10"></textarea>
+                        <input type="submit" value="Enviar" class="button">
+                    </div>
+                </form>
+            </div>
+        </footer>
+    </body>
+</html>
